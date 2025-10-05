@@ -1,0 +1,150 @@
+/* =======  KANBAN – Layout Tkinter  ======= */
+:root {
+  --verde: #90EE90;
+  --amarillo: #FFFF00;
+  --rojo: #FF0000;
+  --borde: #999;
+}
+
+body {
+  margin: 0;
+  font: 12px/1 Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/*  CONTENEDOR MAESTRO  */
+#grid {
+  display: grid;
+  /* 2 columnas: izq (Load) – der (resto) */
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*  COLUMNA IZQUIERDA (Load to Stores)  */
+.col-izq {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/*  ÁREA COMÚN  */
+.area {
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+  padding: 10px;
+  background: #fafafa;
+}
+.area h3 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*  Dist – línea horizontal  */
+.area.dist > div {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+/*  Stores / Damage – centradas  */
+.centro {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*  WIP – columna derecha interna  */
+.area.wip {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/*  TARJETA  */
+.card {
+  width: 90px;
+  height: 90px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 2px 6px;
+  border: 1px solid var(--borde);
+  border-radius: 3px;
+  font-size: 11px;
+  transition: background .2s;
+}
+.card .label { font-weight: 700; }
+.card .valor { font-size: 18px; font-weight: 700; }
+.card button {
+  width: 100%;
+  font-size: 10px;
+  padding: 2px 0;
+  margin: 1px 0;
+  border: 1px solid #666;
+  border-radius: 2px;
+  background: #fff;
+  cursor: pointer;
+}
+.card button:hover { background: #f2f2f2; }
+
+/*  colores semáforo  */
+.verde     { background: var(--verde) !important; }
+.amarillo  { background: var(--amarillo) !important; }
+.rojo      { background: var(--rojo) !important; }
+
+/* ==========  GRID RESPONSIVO  ========== */
+#grid {
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 3 columnas grandes: Load | Centro | WIP  */
+@media (min-width: 992px) {
+  #grid {
+    grid-template-columns: 20% 1fr 30%;   /* Load angosta, WIP más ancha */
+  }
+}
+
+/* 1 columna chicas: todas abajo de la otra */
+@media (max-width: 991px) {
+  #grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* internas: cuadrícula en Load / WIP, fila en Dist/Stores/Damage */
+.area.load > div,
+.area.wip > div {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 6px;
+  justify-items: center;
+}
+
+.area.dist > div,
+.area.store > div,
+.area.dmg > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
