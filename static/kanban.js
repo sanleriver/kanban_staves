@@ -1,6 +1,6 @@
 // Cambia solo esta línea según tu entorno
-const API_URL = 'http://127.0.0.1:8000/api';   // local
-// const API_URL = 'https://xxxx.up.railway.app/api'; // prod
+// const API_URL = 'http://127.0.0.1:8000/api';   // local
+const API_URL = 'https://courageous-joy-production.up.railway.app/api'; // prod
 
 /*  configuración de áreas  */
 const AREAS = [
