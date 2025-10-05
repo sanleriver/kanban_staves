@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Conexión con firebase en servidor sin exponer las credenciales
 if not firebase_admin._apps:
-   cred_dict = json.loads(os.environ['FIREBASE_CRED_JSON'])
+    cred_dict = json.loads(os.environ['FIREBASE_CRED_JSON'])
     cred = credentials.Certificate(cred_dict)
     firebase_admin.initialize_app(cred, {
         'databaseURL': os.environ['FIREBASE_DATABASE_URL']
