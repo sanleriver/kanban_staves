@@ -41,7 +41,7 @@ if not firebase_admin._apps:
 SECRET_KEY = 'django-insecure-6a5ky^1vz+zb6p240b=heqdt&fxzhu7#$wznspm0g8_7zpeh=-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST', 'localhost')]
 
