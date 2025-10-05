@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "logisticdollarcity",
+  "private_key_id": "bb5226dbcfc43d23995d9f3edacddfd3cace5973",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0hNFbVFDaDRNF\nvnJ4xSy+CeF0mM+HgN+sPrbPUO/+gctrmHjJzfK4za25WW/yGdU6ebKeCS3eAggS\n2twK7dO3WbIe2UkGhw3K/Ifg6AC28KK6tIbo6pvdYQ7PseZwYfjHYWI/kbpUlS/8\nNl/oVU7Rzjj26LlfaF7oJxKHGV38m/+0LAtrHhhdtogd3d1IdNJPDfe7g2EzYXeL\nOT6K7nx850CSQeOrKVBoYFGm2yMXuriCj+CzDaRVW35uNHU4MZU/fZV/ENXU/oZE\nSpBh2hKDvKZN6ZWBoC3vIFNQ6jYqZy/k/UxfxppDsk3ys7qcaDwhgwddgGDPPaJ2\ny+6J7y5VAgMBAAECggEAL3N2QMaSFi83sK6WEo7p6u5X+Dku3BSRNwqpLSe+Xi0q\nFpdWsN1U/yT5lG4hEgeeWCejPw10pBXun14uVyUa8Og//QHqwy9+/auR4Bm8DlqE\nvAU2LUV2QSQBK7E8vK/UIDzGAaXBz/gDTA3S+hRqipXlvWmBSMX7pJSYtzCA1ySN\nV6MfHkJN7TWWfZboHJR280UHkHTs8cq5Pi0HsivhLyVyki7mbYWqKoXBgPdlwORJ\nN66DYUXBr3G9dtLKeEdjeF6yuriGI2QcKhGKVy3VnZJZafdy7mBOqGk6Hi+M5qNy\nGUQlJ4itzidgJgrXgUWh1fE5I3sg9wr3TfWdoKjsJQKBgQDhRo9SPTduRtIwR6eC\nyCN+RsVX5U+aizFIxun1FZLZqbSuqbM0GMq8IyZfrEa1pPtoUV70fP/0w26yGtWf\npPgV8rw73/DEERr/THuNbtPRxrHkik0d8UWEpeH9vE7NRTuBax298W3wgYddx7DV\nAS288S1xztFJJIWTz5QU76DzzwKBgQDNI5XvkAwy8i3cqAUzJMixpFU+SS9IPmq3\nniEaTawR746AJBD1M4dvXojl6pOdR4/7NL8qXEmHfRHNSIDzCs7sGKrGkl8Mwi0X\nwAq+hXiTsq9SM9L2LVIpHpDvdCgqhfhEu9mL6NfRhwF87y76xBAVazmlPU3xhIde\nktDnQV9wmwKBgQCck31kLLZNSJ4o/nS4WsEIsMnTOMfmY56itdbBCPijnue9iqfK\nqvymXUv7rXMMJ5qyO/RivEru5bMXybz3FCN2pdsdRp5CuJzqG0+40vIY2SCl91Z4\nXEz0UJPN10dyNw+P+VKXxamjQ3RBw1zt/765l2v9sUEXtHG/dcS39IILUwKBgCv8\nCVYIaNUzoCnDzPmeVXnhZnWoc37mAzPDsA1XwiFGYCORmCE7Hzr95hSGK4h5o6GV\nObf3ebyXUI3Xke6KzrtIvrU9BSxTJiAFiUg4jhX9JiJWAlHOfeNbLnBpU4NqnkT+\nkjKxhjTi4arMDiKuj1RIXV/UuTWj2PKqQCiVl8UpAoGAbfjFwKZiQ0nzNKT/Yxzv\ndLwUEcazyymy5y9Dtr8WQAxh2TGBfWVB5eKZmFf4nN3jutZY57fAdExhp7b4SglC\neKNxsl4z4gYDoUaPHO1+EJCykvVhoUtToTmiP+6Rze8L0fuMORLR13O+RXgq3rhJ\nkaxxrJnWvUY0lFLgIfWHs/o=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@logisticdollarcity.iam.gserviceaccount.com",
+  "client_id": "105743141078878341430",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40logisticdollarcity.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
