@@ -17,10 +17,19 @@ from firebase_admin import credentials, db
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-if not firebase_admin._apps:          # evita doble inicialización
-    cred = credentials.Certificate(BASE_DIR / 'firebase-crd.json')
+# Conexión con firebase en local
+#if not firebase_admin._apps:          # evita doble inicialización
+#    cred = credentials.Certificate(BASE_DIR / 'firebase-crd.json')
+#    firebase_admin.initialize_app(cred, {
+#        'databaseURL': 'https://logisticdollarcity-default-rtdb.firebaseio.com/'
+#    })
+
+# Conexión con firebase en servidor sin exponer las credenciales
+if not firebase_admin._apps:
+    cred_dict = json.loads(os.environ['FIREBASE_CRED_JSON'])
+    cred = credentials.Certificate(cred_dict)
     firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://logisticdollarcity-default-rtdb.firebaseio.com/'
+        'databaseURL': os.environ['FIREBASE_DATABASE_URL']
     })
 
 # Quick-start development settings - unsuitable for production
